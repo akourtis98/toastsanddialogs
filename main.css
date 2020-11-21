@@ -1,0 +1,460 @@
+@font-face {
+  font-family: montserrat;
+  src: url(../Montserrat/Montserrat-Regular.ttf);
+}
+
+#login form,
+#signup form {
+  width: 750px;
+}
+
+.font-small {
+  font-size: 15px;
+}
+
+* {
+  font-family: montserrat !important;
+}
+
+html,
+body,
+nav,
+main,
+ul {
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  min-height: 700px;
+}
+
+header {
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+
+footer {
+  padding: 20px;
+  background-color: #f1f1f1;
+  bottom: 0px;
+}
+
+footer p {
+  text-align: center;
+}
+
+ul li {
+  display: inline;
+}
+
+ul li a {
+  margin: 10px;
+  text-decoration: none;
+  color: black;
+  color: #4c4c4c;
+  transition: 0.2s ease-in-out;
+}
+
+ul li a:hover {
+  color: #000000;
+}
+
+.flexcenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.font-small {
+  font-size: 15px;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* button {
+  background-color: #4caf50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  opacity: 0.8;
+} */
+
+.imgcontainer {
+  text-align: center;
+}
+
+img.avatar {
+  width: 40%;
+  border-radius: 50%;
+}
+
+.container {
+  padding: 16px;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+#registerbtn {
+  float: left;
+}
+
+#forgotpasswordbtn {
+  float: right;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 300px;
+  padding: 5px 5px;
+  margin: 8px 0;
+  display: block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+.container {
+  padding: 16px;
+}
+
+div.content {
+  margin: auto;
+  width: 70vw;
+}
+
+.deletebtn {
+  transition: 0.2s ease-in-out;
+  cursor: pointer;
+  width: 150px;
+  border: 0px;
+}
+
+.deletebtn:hover {
+  background-color: red;
+  color: white;
+  border: 1px solid red !important;
+}
+
+table button {
+  height: 30px;
+}
+
+.modifybtn {
+  transition: 0.2s ease-in-out;
+  cursor: pointer;
+  border: 0px;
+  width: 150px;
+}
+
+.modifybtn:hover {
+  background-color: lightseagreen;
+  color: white;
+  border: 1px solid lightseagreen !important;
+}
+
+.font-small {
+  font-size: 15px;
+}
+
+.flexcenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 300px;
+  padding: 5px 5px;
+  margin: 8px 0;
+  display: block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+.imgcontainer {
+  text-align: center;
+}
+
+img.avatar {
+  width: 40%;
+  border-radius: 50%;
+}
+
+.container {
+  padding: 16px;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+table,
+th,
+td {
+  border-collapse: collapse;
+}
+
+th {
+  border-bottom: 2px solid black;
+}
+
+td {
+  padding: 10px;
+}
+
+tr:nth-child(even) {
+  background-color: #d3d3d3;
+}
+
+td {
+  text-align: center;
+}
+
+main {
+  width: 70vw;
+  margin: auto;
+}
+
+table {
+  width: 100%;
+}
+
+.actionbtn {
+  transition: 0.2s ease-in-out;
+  cursor: pointer;
+  width: 120px;
+  border: 0px;
+  height: 40px;
+}
+
+.actionbtn:hover {
+  background-color: lightseagreen;
+  color: white;
+  border: 1px solid lightseagreen !important;
+}
+
+#signup #signupbtn {
+  float: left;
+}
+
+#signup form {
+  width: 750px;
+}
+
+#signup .font-small {
+  font-size: 15px;
+}
+
+#signup input[type="text"],
+#signup input[type="number"],
+#signup input[type="email"],
+#signup input[type="password"] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+#signup button {
+  background-color: #4caf50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+#signup button:hover {
+  opacity: 0.8;
+}
+
+#signup .imgcontainer {
+  text-align: center;
+}
+
+#signup img.avatar {
+  width: 40%;
+  border-radius: 50%;
+}
+
+#signup .container {
+  padding: 16px;
+}
+
+#signup span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+#signup #forgotpasswordbtn {
+  float: right;
+}
+
+#login .font-small {
+  font-size: 15px;
+}
+
+#login .flexcenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#login input[type="text"],
+#login input[type="password"] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+#login button {
+  background-color: #4caf50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+#login button:hover {
+  opacity: 0.8;
+}
+
+#login .imgcontainer {
+  text-align: center;
+}
+
+#login img.avatar {
+  width: 40%;
+  border-radius: 50%;
+}
+
+#login .container {
+  padding: 16px;
+}
+
+#login span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+#login #registerbtn {
+  float: left;
+}
+
+#login #forgotpasswordbtn {
+  float: right;
+}
+
+#viewworkers button a {
+  text-decoration: none;
+  cursor: pointer;
+  color: black;
+}
+
+#viewschedule table {
+  width: 100% !important;
+  height: 100% !important;
+  margin: 0 !important;
+  border-collapse: collapse;
+}
+
+#viewschedule tr:nth-of-type(odd) {
+  background: #eee;
+}
+
+#viewschedule th {
+  background: #3498db;
+  color: white;
+  font-weight: bold;
+}
+
+#viewschedule td,
+#viewschedule th {
+  padding: 10px;
+  border: 1px solid #ccc;
+  text-align: left;
+  font-size: 18px;
+}
+
+#availableslot {
+  background-color: #2ab7ca;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 760px),
+  (min-device-width: 768px) and (max-device-width: 1024px) {
+  #viewschedule table {
+    width: 100%;
+  }
+
+  #viewschedule table,
+  #viewschedule thead,
+  #viewschedule tbody,
+  #viewschedule th,
+  #viewschedule td,
+  #viewschedule tr {
+    display: block;
+  }
+
+  #viewschedule thead tr {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+
+  #viewschedule tr {
+    border: 1px solid #ccc;
+  }
+
+  #viewschedule td {
+    border: none;
+    border-bottom: 1px solid #eee;
+    position: relative;
+    padding-left: 50%;
+  }
+
+  #viewschedule td:before {
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    width: 45%;
+    padding-right: 10px;
+    white-space: nowrap;
+    content: attr(data-column);
+
+    color: #000;
+    font-weight: bold;
+  }
+}
+
+.mutedtext {
+  color: #999999;
+}
