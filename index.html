@@ -150,12 +150,6 @@
             z-index: -10;
         }
 
-        .testwrapper {
-            position: fixed;
-            width: 100%;
-            height: 100%;
-        }
-
         html,
         body {
             padding: 0;
@@ -165,18 +159,10 @@
 </head>
 
 <body>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <div style="text-align: center;">
-        <button class="clickaction" style="font-size: 30px; ">click me</button>
-    </div>
-    <br>
-    <br>
     <div id="dialogwrapper">
+        <div style="text-align: center;">
+            <button class="clickaction" style="font-size: 30px; ">click me</button>
+        </div>
         <div id="viewschedule">
             <table>
                 <thead>
@@ -310,27 +296,23 @@
             </div>
         </div>
     </div>
-
-    <div class="dialog" style=" width: 500px; height: 250px; margin: auto; border-radius: 10px;">
-        <div class="rowTitle">
-            <h1 style="padding: 10px 30px; font-family: nimbus !important">
-                Deletion of worker</h1>
+    <div id="target" style="height: 100vh; width: 100vw;">
+        <div class="dialog" style=" width: 500px; height: 250px; margin: auto; border-radius: 10px; z-index: 10000;">
+            <div class="rowTitle">
+                <h1 style="padding: 10px 30px; font-family: nimbus !important">
+                    Deletion of worker</h1>
+            </div>
+            <div class="rowContent">
+                <p style="padding-left: 30px;">
+                    Are you sure you would like to delete the worker with name: '' and id: ''?</p>
+            </div>
+            <div class="rowOptions">
+                <button class="mybtn btnconfirm pullleft clickaction">Yes, I am sure</button>
+                <button class="mybtn btncancel pullright clickaction">No, Cancel
+                </button>
+            </div>
         </div>
-        <div class="rowContent">
-            <p style="padding-left: 30px;">
-                Are you sure you would like to delete the worker with name: '' and id: ''?</p>
-        </div>
-        <div class="rowOptions">
-            <button class="mybtn btnconfirm pullleft clickaction">Yes, I am sure</button>
-            <button class="mybtn btncancel pullright clickaction">No, Cancel
-            </button>
-
-        </div>
-
-
     </div>
-
-
 
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script>
@@ -341,6 +323,16 @@
                 $(".dialog").css("opacity", bool);
                 bool = (bool + 1) % 2;
             });
+
+            $("#target").click(function (event) {
+                if (!$(event.target).closest('.dialog').length) {
+                    $("#dialogwrapper").toggleClass("dialogwrapper");
+                    $(".dialog").css("opacity", bool);
+                    bool = (bool + 1) % 2;
+                } else {
+                    console.log("within");
+                }
+            })
         });
     </script>
 </body>

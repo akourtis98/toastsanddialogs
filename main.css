@@ -1,3 +1,8 @@
+@font-face {
+  font-family: montserrat;
+  src: url(../Montserrat/Montserrat-Regular.ttf);
+}
+
 table,
 th,
 td {
@@ -23,10 +28,6 @@ td {
 main {
   width: 70vw;
   margin: auto;
-}
-
-table {
-  width: 100%;
 }
 
 .actionbtn {
@@ -170,9 +171,9 @@ table {
 }
 
 #viewschedule table {
-  width: 100% !important;
+  width: 90% !important;
   height: 100% !important;
-  margin: 0 !important;
+  margin: auto !important;
   border-collapse: collapse;
 }
 
