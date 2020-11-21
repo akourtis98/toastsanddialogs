@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @font-face {
+            font-family: nimbus;
+            src: url(Nimbus-Sans-D-OT-Ultra-Light_32757.ttf);
+        }
+
+        .toast {
+            width: 700px;
+            position: relative;
+            bottom: 0px;
+            height: 50px;
+            left: 0;
+            right: 0;
+            margin: 50px auto;
+            border-radius: 50px;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .col-1 {
+            height: 100%;
+            width: 12%;
+        }
+
+        .col-11 {
+            height: 100%;
+            width: 88%;
+        }
+
+        .flexcenter {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .toast-success {
+            background-color: #4caf50;
+        }
+
+        .toast-bad {
+            background-color: #e61a2a;
+        }
+
+        .toast-warning {
+            background-color: orangered;
+        }
+    </style>
+
+</head>
+
+<body>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br><br>
+    <div style="text-align: center;">
+        <h1 style="font-family: nimbus; font-weight: 900;"><b>Toasts</b></h1>
+    </div>
+    <hr>
+    <div class="toast toast-bad">
+        <div class="col-1 flexcenter"><span style="font-size: 30px; color: white;">:(</span></div>
+        <div class="col-11 flexcenter">
+            <p style="color: white; font-size: 20px; font-weight: 900; font-family: nimbus !important;">Apologies but
+                something went
+                wrong. Please log out and log back in.
+            </p>
+        </div>
+    </div>
+
+    <div class="toast toast-success">
+        <div class="col-1 flexcenter"><span style="font-size: 30px; color: white;">&#x2713;</span></div>
+        <div class="col-11 flexcenter">
+            <p style="color: white; font-size: 20px; font-weight: 900; font-family: nimbus !important;">You have
+                successfully registered a
+                SASS session with for ITC 1070
+            </p>
+        </div>
+    </div>
+
+    <div class="toast toast-warning">
+        <div class="col-1 flexcenter"><span style="font-size: 30px; color: white;">&#x21;</span></div>
+        <div class="col-11 flexcenter">
+            <p style="color: white; font-size: 20px; font-weight: 900; font-family: nimbus !important;">Wrong
+                credentials entered
+                more than 5 times. This account is locked.
+                <br>Please contact the Administrator of Deree, ACG.
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>
