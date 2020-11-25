@@ -18,15 +18,21 @@
 
         .toast {
             width: 700px;
-            position: relative;
-            bottom: 0px;
-            height: 50px;
+            position: absolute;
+            bottom: 50px;
             left: 0;
             right: 0;
             margin: 50px auto;
             border-radius: 50px;
             display: flex;
             flex-wrap: wrap;
+        }
+
+        #toast1,
+        #toast2,
+        #toast3 {
+            transition: 0.3s ease-in-out;
+            opacity: 0;
         }
 
         .col-1 {
@@ -263,8 +269,18 @@
         <div style=" text-align: center;">
             <h1 style="font-family: nimbus; font-weight: 900;"><b>Toasts</b></h1>
         </div>
+
         <hr>
-        <div class="toast toast-bad">
+        <div style="text-align: center;">
+            <button id="toast1btn" style="font-size: 30px; ">click toast</button>
+
+            <button id="toast2btn" style="font-size: 30px; ">click toast2</button>
+
+            <button id="toast3btn" style="font-size: 30px; ">click toast3</button>
+        </div>
+
+
+        <div class="toast toast-bad" id="toast1">
             <div class="col-1 flexcenter"><span style="font-size: 30px; color: white;">:(</span></div>
             <div class="col-11 flexcenter">
                 <p style="color: white; font-size: 20px; font-weight: 900; font-family: nimbus !important;">Apologies
@@ -275,7 +291,7 @@
             </div>
         </div>
 
-        <div class="toast toast-success">
+        <div class="toast toast-success" id="toast2">
             <div class="col-1 flexcenter"><span style="font-size: 30px; color: white;">&#x2713;</span></div>
             <div class="col-11 flexcenter">
                 <p style="color: white; font-size: 20px; font-weight: 900; font-family: nimbus !important;">You have
@@ -285,7 +301,7 @@
             </div>
         </div>
 
-        <div class="toast toast-warning">
+        <div class="toast toast-warning" id="toast3">
             <div class="col-1 flexcenter"><span style="font-size: 30px; color: white;">&#x21;</span></div>
             <div class="col-11 flexcenter">
                 <p style="color: white; font-size: 20px; font-weight: 900; font-family: nimbus !important;">Wrong
@@ -295,6 +311,7 @@
                 </p>
             </div>
         </div>
+
     </div>
     <div id="target" style="height: 100vh; width: 100vw;">
         <div class="dialog" style=" width: 500px; height: 250px; margin: auto; border-radius: 10px; z-index: 10000;">
@@ -317,6 +334,28 @@
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script>
         $(document).ready(function () {
+            // on id click show opacity1 for timeout
+            $("#toast3btn").click(function () {
+                $("#toast3").css("opacity", 1);
+                setTimeout(function () {
+                    $("#toast3").css("opacity", 0);
+                }, 3000);
+            });
+
+            $("#toast2btn").click(function () {
+                $("#toast2").css("opacity", 1);
+                setTimeout(function () {
+                    $("#toast2").css("opacity", 0);
+                }, 3000);
+            });
+
+            $("#toast1btn").click(function () {
+                $("#toast1").css("opacity", 1);
+                setTimeout(function () {
+                    $("#toast1").css("opacity", 0);
+                }, 3000);
+            });
+
             var bool = 1;
             $(".clickaction").click(function () {
                 $("#dialogwrapper").toggleClass("dialogwrapper");
@@ -332,7 +371,7 @@
                 } else {
                     console.log("within");
                 }
-            })
+            });
         });
     </script>
 </body>
